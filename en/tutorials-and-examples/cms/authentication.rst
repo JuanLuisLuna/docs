@@ -59,7 +59,7 @@ add the following::
         protected function _setPassword(string $password) : ?string
         {
             if (strlen($password) > 0) {
-                return (new DefaultPasswordHasher())->hash($password);
+                return (new DefaultPasswordHasher)->hash($password);
             }
         }
     }
